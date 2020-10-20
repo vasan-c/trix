@@ -1,193 +1,184 @@
-(function($) {
-    "use strict";
+(function ($) {
+	"use strict";
+	/*----------------------------
+	Animation js active
+	------------------------------ */
+	AOS.init();
+	/*----------------------------
+	Counter-up
+	------------------------------ */
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
+	/*----------------------------
+     Video Popup JS
+	----------------------------*/
+	$('.popup-youtube').magnificPopup({
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
 
-    jQuery(document).ready(function($) {
+	/*-----------------------------
+Portfolio Carousel
+------------------------------*/
 
-        /*====  responsive menu js active =====*/
-        if ($.fn.slicknav) {
-            $('.mainmenu ul#nav').slicknav({
-                prependTo: ".responsive_menu",
-                label: ""
-            })
-        }
+	$('.portfolio-item-slider').slick({
+		dots: false,
+		arrows: true,
+		prevArrow: "<i class='fas fa-chevron-left left-arrow'></i>",
+		nextArrow: "<i class='fas fa-chevron-right right-arrow'></i>",
+		infinite: true,
+		lazyLoad: 'ondemand',
+		autoplay: true,
+		speed: 500,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: false
+				}
+    		},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: false
+				}
+    		},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false
+				}
+    		}
 
-        /*====  sticky menu js active =====*/
-        if ($.fn.sticky) {
-            $('.header-area').sticky({ stopSpacing: 0 });
-        }
+			]
+	});
+		/*-----------------------------
+Testimonial Carousel
+------------------------------*/
+		$('.testimonial-slider').slick({
+		dots: false,
+		arrows: true,
+		prevArrow: "<i class='fas fa-chevron-left left-arrow-2'></i>",
+		nextArrow: "<i class='fas fa-chevron-right right-arrow-2'></i>",
+		infinite: true,
+		autoplay: false,
+		speed: 1200,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	});
+			/*-----------------------------
+Project Carousel
+------------------------------*/
+		$('.single-project-slider').slick({
+		dots: false,
+		arrows: true,
+		prevArrow: "<i class='fas fa-chevron-left left-arrow-3'></i>",
+		nextArrow: "<i class='fas fa-chevron-right right-arrow-3'></i>",
+		infinite: true,
+		autoplay: true,
+		speed: 1200,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	});
+	
+	/*----------------------------
+	Search
+	------------------------------ */
+	var changeClass = function (name) {
+		$('#search, .search-icon-area a').removeAttr('class').addClass(name);
+	}
+	/*----------------------------
+	jQuery Mean Menu
+	------------------------------ */
+	$("#mobile-menu").meanmenu({
+		meanMenuContainer: ".mobile-menu",
+		meanScreenWidth: "767"
+	});
+	$(".info-bar").on("click", function () {
+		$(".extra-info").addClass("info-open");
+	});
+	$(".close-icon").on("click", function () {
+		$(".extra-info").removeClass("info-open");
+	});
+	/*----------------------------
+    Sticky menu active
+    ------------------------------ */
+	function fixed_top_menu() {
+		var windows = $(window);
+		windows.on("scroll", function () {
+			var header_height = $(".main-navigation").height();
+			var scrollTop = windows.scrollTop();
+			if (scrollTop > header_height) {
+				$(".main-navigation").addClass("sticky");
+			} else {
+				$(".main-navigation").removeClass("sticky");
+			}
+		});
+	}
+	fixed_top_menu();
 
-        /*====  screenshot slide =====*/
-        if ($.fn.owlCarousel) {
-            $('.screenshot-slide').owlCarousel({
-                items: 4,
-                loop: true,
-                margin: 20,
-                dots: false,
-                autoplay: false,
-                center: true,
-                mouseDrag: true,
-                autoWidth: false,
-                nav: true,
-                autoplayHoverPause: true,
-                touchDrag: true,
-                navText: ["<i class='zmdi zmdi-chevron-left'></i>", "<i class='zmdi zmdi-chevron-right'></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true,
-                        margin: 0
-                    },
-                    480: {
-                        items: 2,
-                         margin: 0
-                    },
-                    768: {
-                        items: 3,
-                    },
-                    992: {
-                        items: 4
-                    }
-                }
-            });
-        }
-        /*====  screenshot slide =====*/
-        if ($.fn.owlCarousel) {
-            $('.screenshot-home3-slide').owlCarousel({
-                items: 5,
-                loop: true,
-                nav: true,
-                autoplay: true,
-                margin: 30,
-                center: true,
-                navText: ["<i class='zmdi zmdi-chevron-left'></i>", "<i class='zmdi zmdi-chevron-right'></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true,
-                        margin: 0
-                    },
-                    480: {
-                        items: 2,
-                        center: false,
-                        margin: 0
-                    },
-                    768: {
-                        items: 3
-                    },
-                    992: {
-                        items: 5
-                    }
-                }
-            });
-        }
+	/*-----------------
+	Scroll-Up
+	-----------------*/
+	$.scrollUp({
+		scrollText: '<i class="far fa-arrow-alt-circle-up"></i>',
+		easingType: 'linear',
+		scrollSpeed: 1000,
+		animation: 'fade'
+	});
+	/*-----------------
+    POrtfolio Filter
+    -----------------*/
+	var $grid = $('.grid').isotope({
+		percentPosition: true,
+	})
+	$('.portfolio-filter').on('click', 'a', function (e) {
+		e.preventDefault();
+		$(this).parent().addClass('active').siblings().removeClass('active');
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({
+			filter: filterValue
+		});
+	});
 
-        /*====  testimonial slide =====*/
-        if ($.fn.owlCarousel) {
-            $('.testimonial-slide, .blog-slide').owlCarousel({
-                items: 3,
-                loop: true,
-                nav: false,
-                autoplay: true,
-                margin: 20,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    480: {
-                        items: 2,
-                    },
-                    768: {
-                        items: 3,
-                    },
-                    992: {
-                        items: 3
-                    }
-                }
-            });
-        }
+	/*----------------------------
+	       Menu active JS
+	     ----------------------------*/
+	$('.portfolio-filter ul li a').on('click', function () {
+		$('.portfolio-filter ul li a').removeClass("current");
+		$(this).addClass("current");
+	});
 
-        /*====  testimonial slide =====*/
-        if ($.fn.owlCarousel) {
-            $('.home2-screenshot-slide').owlCarousel({
-                items: 3,
-                loop: true,
-                nav: true,
-                autoplay: true,
-                margin: 20,
-                navText: ["<i class='zmdi zmdi-chevron-left'></i>", "<i class='zmdi zmdi-chevron-right'></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    480: {
-                        items: 2,
-                    },
-                    768: {
-                        items: 3,
-                    },
-                    992: {
-                        items: 3
-                    }
-                }
-            });
-        }
-
-        /*====  magnific popup js active =====*/
-        if ($.fn.magnificPopup) {
-            $('.video-btn').magnificPopup({
-                type: 'video',
-                mainClass: 'mfp-iframe'
-            });
-        }
-
-        /*====  magnific popup js active =====*/
-        if ($.fn.magnificPopup) {
-            $('.single-blog-popup').magnificPopup({
-                type: 'image',
-                mainClass: 'mfp-with-zoom',
-                zoom: {
-                    enabled: true,
-                    duration: 300,
-                    easing: 'ease-in-out'
-                },
-                gallery: {
-                    enabled: true
-                }
-            });
-
-        }
-
-        /*====  one page js active =====*/
-        $('.mainmenu > ul#nav > li > a, .preview-hero a.view-demo').click(function() {
-            //Toggle Class
-            $(".active").removeClass("active");
-            $(this).closest('li').addClass("active");
-            var theClass = $(this).attr("class");
-            $('.' + theClass).parent('li').addClass('active');
-            //Animate
-            $('html, body').stop().animate({
-                scrollTop: $($(this).attr('href')).offset().top - 0
-            }, 1000);
-            return false;
-        });
-
+	  $('.main-menu ul li a').on ('click', function () {
+        $('.main-menu ul li a').removeClass("current");
+        $(this).addClass("current");
     });
+	/*----------------------------
+	Preloader
+	------------------------------ */
+	$(window).on('load', function () {
+		$("#status").on('fadeOut', "slow");
+		$("#preloader").on('delay', 500).on('fadeOut', "slow").remove();
+	});
+	/*----------------------------
+	Move Background
+	------------------------------ */
+	$(function () {
+		$('.big-footer').backgroundMove();
+	});
 
-    /*====  Window Load Function =====*/
-    jQuery(window).load(function() {
 
-    /*====  animation js =====*/
-        new WOW().init();
-
-    /*====  preloader js =====*/
-      setTimeout(function() {
-            $('body').addClass('loaded');
-        }, 500);
-
-    });
-
-}(jQuery));
+})(jQuery);
