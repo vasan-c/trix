@@ -1,0 +1,208 @@
+/*EXCLUSIVE ON themeforest.net*/
+
+/*-----------------------------------------------------------------------------------
+	Theme Name: IMPLO
+	Description: The Multi-Purpose Template
+	Author: Theme Friend
+	Author URI: https://themeforest.net/user/theme_friend
+	Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/*Basic*/
+.bg-color-construction{
+	background-color: #f5ac00;
+}
+
+.heading-sm{
+	font-size: 20px;
+}
+
+h4.heading{
+	font-size: 44px;
+}
+
+a:hover, a:active {
+    color: #f5ac00;
+}
+
+.text-color-constructionPrimary{
+	color: #f5ac00;
+}
+
+.btn.btn-constructionPrimary{
+	background-color: #f5ac00;
+}
+
+.btn.btn-constructionPrimary:hover{
+	background-color: #ea9c29;
+}
+
+.btn.btn-line.line-constructionPrimary {
+    border-color: #f5ac00;
+    color: #f5ac00;
+}
+
+.btn.btn-line.line-constructionPrimary:hover {
+    border-color: #f5ac00;
+    color: #fff;
+    background-color: #f5ac00;
+}
+
+.btn.btn-constructionPrimary:focus,
+.btn.btn-line.line-constructionPrimary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(245, 172, 0, .5) !important;
+}
+
+.social-btn.social-btn-constructionPrimary{
+	background-color: #f5ac00;
+	color: #fff;
+}
+
+.social-btn.social-btn-constructionPrimary:hover{
+	color: #f5ac00;
+	background-color: #fff;
+}
+
+/*Header*/
+
+.construction_header nav.navbar.bootsnav.default-dark ul.nav > li > a, 
+.construction_header nav.navbar.bootsnav.transparent ul.nav > li > a{
+	color: #FFFFFF;
+}
+
+.construction_header nav.navbar.default-dark ul.nav li.dropdown.on > a,
+.construction_header nav.navbar.default-dark ul.nav > li > a:hover, 
+.construction_header nav.navbar.default-dark ul.nav > li.active > a:hover,
+.construction_header nav.navbar.default-dark ul.nav li.active > a,
+.construction_header nav.navbar.default-dark li.dropdown ul.dropdown-menu > li a:hover
+{
+	opacity: 0.6;
+}
+
+.construction_header  nav.navbar .social_area .social-btn-icon{
+	font-size: 14px;
+}
+
+.construction_header .social-btn.social-btn-line.line-white{
+	border-color: transparent;
+    color: #f5ac00;
+}
+
+.construction_header .social-btn.social-btn-line.line-white:hover{
+	background-color: transparent;
+	opacity: 0.6;
+}
+
+/*end header*/
+
+/*cover*/
+
+.header-cover.header-cover-construction .cover-content{
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px 100px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+
+.header-cover.header-cover-construction .cover-lg-heading{
+	font-size: 60px;
+}
+
+.header-cover.header-cover-construction .cover-sub-heading{
+	font-size: 32px;
+}
+
+@media (max-width: 1023px){
+	.header-cover.header-cover-construction .cover-content{
+		transform: translate(-50%,-50%);
+		left: 50%;
+		right: auto;
+		padding: 50px;
+	}
+}
+
+@media (max-width: 767px){
+	.header-cover.header-cover-construction .cover-content{
+		transform: translate(-50%,-50%);
+		left: 50%;
+		right: auto;
+		padding: 50px;
+	}
+}
+
+/*End cover*/
+
+
+
+/*Parallax Section*/
+
+.construction_parallax.parallax-color-pattern::before{
+	background: rgba(245, 172, 0, 0.85);
+}
+
+/*End Parallax Section*/
+
+/*Strength Section*/
+
+.construction_strength_section .circleIconBox{
+	background-color: #f5ac00;
+	border-color: #f5ac00;
+}
+
+/*End Strength Section*/
+
+/*Gallery Section*/
+
+.construction_gallery_section.gallery .galleryFilter a:before{
+	background-color: #f5ac00;
+}
+
+.construction_gallery_section.gallery .gallery_area .portfolio-item-style5 .img_area .linkArea{
+    background-color: rgba(255, 152, 0, 0.85);
+}
+
+/*End Gallery Section*/
+
+/*testimonial*/
+.construction_testimonial_section 
+.testimonial-style.testimonial-style5 .testimonial-item .name{
+	color: #f5ac00;
+}
+
+.testimonial-style.testimonial-style5 .testimonial-item .info_wrapper{
+    background-color: #f8f8f8;
+}
+.testimonial-style.testimonial-style5 .testimonial-item .info_wrapper::before{
+	border-color: transparent transparent #f8f8f8 transparent;
+}
+/*End testimonial*/
+
+/*Contact Form*/
+.construction_contact_section .form.form-style2 .form-control:focus{
+    border-color: #f5ac00 !important;
+    box-shadow: inset 0 1px 1px rgba(255, 152, 0, 0.25), 0 0 8px rgba(255, 152, 0, 0.25);
+}
+/*End Contact Form*/
+
+
+/*Blog Section*/
+.blog-post-style2 .img_area .hover-box{
+	background-color: rgba(255, 152, 0, 0.85);
+}
+
+.blog-post .post-info a.post-comment:hover{
+	color: #f5ac00 !important;
+}
+/*End Blog Section*/
+
+/*Footer*/
+
+footer{
+	background-color: #333333;
+}
+
+footer .link-list a:hover{
+	color: #FFFFFF !important;
+}
