@@ -1,0 +1,231 @@
+/*EXCLUSIVE ON themeforest.net*/
+
+/*-----------------------------------------------------------------------------------
+	Theme Name: IMPLO
+	Description: The Multi-Purpose Template
+	Author: Theme Friend
+	Author URI: https://themeforest.net/user/theme_friend
+	Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/*Basic*/
+
+a:hover, a:active {
+    color: #f76d59;
+}
+
+.heading-sm{
+	font-size: 20px;
+}
+
+h4.heading{
+	font-size: 44px;
+}
+
+.bg-color-gym{
+	background-color: #f76d59 !important;
+}
+
+.text-color-gymPrimary{
+	color: #f76d59;
+}
+
+
+.btn.btn-line.line-gymPrimary {
+    border-color: #f76d59;
+    color: #f76d59;
+}
+
+.btn.btn-line.line-gymPrimary:hover {
+    border-color: #f76d59;
+    color: #fff;
+    background-color: #f76d59;
+}
+
+.social-btn.social-btn-light:hover{
+	background-color: #f76d59;
+}
+
+.top-bar.gym-top-bar{
+    background-color: #666666;
+}
+
+.overlaySection.gymPrimaryColorOverlay::before{
+	background-color: rgba(235, 90, 70, 0.6);
+}
+
+/*Cover section*/
+
+@media (min-width: 1024px){
+	.header-cover .cover-lg-heading {
+	    font-size: 72px;
+	}
+
+	.header-cover .cover-sub-heading{
+		font-size: 32px;
+	}
+
+	nav.navbar.bootsnav .attr-nav > ul > li.search > a{
+		background: #f76d59;
+	}
+}
+
+/*End cover section*/
+
+/*Abour section*/
+
+.gym_about_section h4.heading{
+	font-size: 36px;
+}
+
+.gym_about_section .large_img_area{
+	background: #f76d59;
+	position: relative;
+}
+
+.gym_about_section .large_img_area .content_area{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 30px 20px;
+}
+
+.gym_about_section .large_img_area .content_area p{
+	font-size: 14px;
+}
+
+.gym_about_section .grid_icon{
+	width: 40px;
+}
+
+.gym_class_section .lightbox-gallery a .icon_area{
+	background-color: rgba(235, 90, 70, 0.6);
+}
+
+.gymTrainerSection .singleMember.team-style4:hover .social_icon{
+	background-color: #f76d59;
+}
+
+/*Start Class Section*/
+
+.gym_class_section .owl-carousel.owl-theme .owl-prev, 
+.gym_class_section .owl-carousel.owl-theme .owl-next{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #D2D2D2;
+    border-radius: 50%;
+    color: #888888 !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.gym_class_section .owl-carousel.owl-theme .owl-prev:hover, 
+.gym_class_section .owl-carousel.owl-theme .owl-next:hover{
+	background: transparent;
+}
+
+.gym_class_section .owl-carousel.owl-theme .owl-prev{
+	left: -100px;
+}
+
+.gym_class_section .owl-carousel.owl-theme .owl-next {
+    right: -100px;
+}
+
+.service-box.service-box-style1 
+.service-title::before {
+	content: none;
+}
+
+.service-box.service-box-style1 .img_area .icon_area{
+	background-color: rgba(235, 90, 70, 0.7);
+}
+
+@media only screen and (max-width: 800px){
+	.gym_class_section .owl-carousel.owl-theme .owl-nav{
+		margin-top: 40px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.gym_class_section .owl-carousel.owl-theme .owl-prev,
+	.gym_class_section .owl-carousel.owl-theme .owl-next{
+		display: flex !important;
+	    position: static;
+	    transform: none;
+	    justify-content: center;
+	}
+}
+
+/*video Section*/
+
+.gymVideoSection .gym_video{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+
+.video-play-button:before,
+.video-play-button:after{
+    background: #f76d59;
+}
+
+
+@media only screen and (max-width: 550px) {
+  .gymVideoSection .gym_video{
+		width: 300px;
+		height: 200px;
+		margin: 0 auto;
+	}
+}
+
+/*End video Section*/
+
+/*Gallery*/
+.gallery .lightbox-gallery a .icon_area{
+    background-color: rgba(235, 90, 70, 0.7);
+}
+
+.gallery .galleryFilter a:before{
+	background-color: #f76d59;
+}
+/*End Gallery*/
+
+/*Pricing*/
+
+.gymPricingSection .plan.plan_style4.important{
+    background-color: #f76d59;
+}
+
+.gymPricingSection .plan.plan_style4 .plan_header .icon,
+.plan.plan_style4 .plan_price strong{
+	color: #f76d59;
+}
+
+.gymPricingSection .plan.plan_style4.important .plan_header .icon{
+	color: #fff;
+}
+
+/*End Pricing*/
+
+/*Blog*/
+.blog-post-style2 .img_area .hover-box{
+	background-color: rgba(235, 90, 70, 0.85);
+}
+
+.blog-post .post-info a.post-comment:hover{
+	color: #f76d59 !important;
+}
+/*End blog*/
+
+/*Footer*/
+footer .link-list a:hover{
+	color: #f76d59 !important;
+}
+/*End Footer*/

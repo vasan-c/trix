@@ -1,0 +1,181 @@
+/*EXCLUSIVE ON themeforest.net*/
+
+/*-----------------------------------------------------------------------------------
+    Theme Name: IMPLO
+    Description: The Multi-Purpose Template
+    Author: Theme Friend
+    Author URI: https://themeforest.net/user/theme_friend
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/*Basic*/
+
+.bg-color-education{
+	background-color: #20bcbc !important;
+}
+
+a:hover, a:active {
+    color: #20bcbc;
+}
+
+.heading-sm{
+    font-size: 20px;
+}
+
+h3.heading{
+    font-size: 50px;
+}
+
+.text-color-educationPrimary{
+	color: #20bcbc;
+}
+
+.educationOverlay:before{
+    background-color: rgba(6, 29, 84, 0.7);
+}
+
+.btn.btn-line.line-educationPrimary {
+    border-color: #20bcbc;
+    color: #fff;
+}
+
+.btn.btn-line.line-educationPrimary:hover {
+    border-color: #20bcbc;
+    color: #fff;
+    background-color: #20bcbc;
+}
+
+.btn.btn-fill.fill-education {
+    border-color: #20bcbc;
+    background-color: #20bcbc;
+    color: #fff;
+    border-width: 2px;
+}
+
+.btn.btn-fill.fill-education:hover {
+    border-color: #20bcbc;
+    background-color: transparent;
+    color: #20bcbc;
+}
+
+.social-btn.social-btn-educationPrimary{
+    background-color: #20bcbc;
+    color: #fff;
+}
+
+.social-btn.social-btn-educationPrimary:hover{
+    color: #20bcbc;
+    background-color: #fff;
+}
+
+.social-btn.education-colored-btn{
+    background-color: #20bcbc;
+    border-color: #20bcbc;
+}
+
+.social-btn.education-colored-btn:hover{
+    color: #20bcbc;
+    border-color: #20bcbc;
+}
+
+/*header*/
+
+.top-bar.education-top-bar{
+	background-color: #20bcbc;
+}
+
+/*end header*/
+
+/*Cover section*/
+
+@media (min-width: 1024px){
+    .header-cover .cover-lg-heading {
+        font-size: 72px;
+    }
+
+    .header-cover .cover-sub-heading{
+        font-size: 24px;
+    }
+
+    .attr-nav.search a{
+        background: #ffffff;
+        color: #20bcbc;
+    }
+}
+
+/*End cover section*/
+
+/*about*/
+.education_about_section .accordion.accordion-icon.icon-fill
+.panel-heading .leftIcon{
+    background-color: #20bcbc;
+}
+/*end about*/
+
+/*Feature Section*/
+.education_feature_section .text-box-style9 .content{
+    width: 100%;
+    margin: 0;
+}
+
+.education_feature_section .video_area::before{
+    background-color: rgba(6, 29, 84, 0.7);
+}
+
+.video-play-button:before,
+.video-play-button:after{
+    background: #20bcbc;
+}
+
+/*Counter Section*/
+
+.education_counter_section .counter-item .icon{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    font-size: 60px;
+    color: #20bcbc;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ededed;
+    justify-content: center;
+    align-items: center;
+}
+
+.education_counter_section .counter-item.counter-sm .counter-number{
+    font-size: 52px;
+}
+
+.education_counter_section .counter-item.counter-sm .counter-title{
+    font-size: 14px;
+    color: #20bcbc;
+}
+
+/*End Counter Section*/
+
+/*Quality education*/
+
+.education_quality_section 
+.service-box.service-box-style4 .service-info .info_container:before{
+	background-color: #20bcbc;
+}
+
+/*End Quality education*/
+
+.education_blog_section .blog-post.blog-post-style2{
+    padding: 8px;
+}
+
+.education_blog_section .blog-post-style2 .img_area .hover-box{
+    background-color: rgba(6, 29, 84, 0.7);
+}
+
+.blog-post .post-info a.post-comment:hover{
+    color: #20bcbc !important;
+}
+
+/*Footer*/
+
+footer .link-list a:hover{
+    color: #20bcbc !important;
+}
