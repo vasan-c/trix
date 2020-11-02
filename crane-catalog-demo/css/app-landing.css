@@ -1,0 +1,481 @@
+/*EXCLUSIVE ON themeforest.net*/
+
+/*-----------------------------------------------------------------------------------
+    Theme Name: IMPLO
+    Description: The Multi-Purpose Template
+    Author: Theme Friend
+    Author URI: https://themeforest.net/user/theme_friend
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/*Basic*/
+
+.bg-color-applanding{
+	background-color: #761E9D;
+}
+
+.bg-color-gray-applanding{
+    background-color: #EBECED;
+}
+
+a:hover, a:active {
+    color: #FF6600;
+}
+
+h4.heading{
+    font-size: 44px;
+}
+
+h5.heading{
+    font-size: 36px;
+}
+
+.heading-sm{
+    font-size: 22px;
+}
+
+.text-color-applanding{
+	color: #FF6600 !important;
+}
+
+.btn.btn-line.line-applanding {
+    border-color: #FF6600;
+    color: #FF6600;
+}
+
+.btn.btn-line.line-applanding:hover {
+    border-color: #FF6600;
+    color: #fff;
+    background-color: #FF6600;
+}
+
+.btn.btn-line.line-applanding:focus,
+.btn.btn-fill.fill-applanding:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, .5) !important;
+}
+
+.btn.btn-fill.fill-applanding {
+    border-color: #FF6600;
+    background-color: #FF6600;
+    color: #fff;
+    border-width: 2px;
+}
+
+.btn.btn-fill.fill-applanding:hover {
+    border-color: #FF6600;
+    background-color: transparent;
+    color: #FF6600;
+}
+
+.social-btn.social-btn-applandingPrimary{
+    background-color: #FF6600;
+    color: #fff;
+}
+
+.social-btn.social-btn-applandingPrimary:hover{
+    color: #FF6600;
+    background-color: #fff;
+}
+
+.borderBottomLight{
+    border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 1024px){
+    .left-bar.bar-dark{
+        background-color: #761E9D;
+    }
+}
+
+/*indicator*/
+
+
+#singleScreenCarousel .carousel-indicators{
+    width: auto;
+    left: auto;
+    display: inline-table;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+
+#singleScreenCarousel .carousel-indicators:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60%;
+    left: 15px;
+    z-index: -1;
+    top: 50%;
+    border-left: 1px dashed red;
+    transform: translateY(-50%);
+}
+
+
+#singleScreenCarousel ol.carousel-indicators li, 
+#singleScreenCarousel ol.carousel-indicators li.active {
+    border: 0;
+    margin: 50px 8px;
+    background: #FF6600;
+    height: 16px;
+    width: 16px;
+    opacity: 1;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #FF6600;
+    border-radius: 50%;
+}
+#singleScreenCarousel .dot {
+    position: absolute;
+    transform: scale(2);
+    background: transparent !important;
+    border: 1px solid rgba(255, 102, 0, 0.7) !important;
+}
+/*End indicator*/
+
+.carousel-wrapper{
+    position: relative;
+}
+
+
+
+/*carousel animation*/
+
+.carousel-fade .carousel-inner .item {
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+@media (max-width: 500px){
+    .header-cover-carousel .carousel-indicators{
+        right: 10px;
+    }
+}
+
+
+/*Header Cover Style*/
+
+.header-cover-app-style{
+    background-color: #250333;
+}
+
+.header-cover-app-style .cover-lg-heading{
+    font-size: 60px;
+}
+
+.header-cover-app-style .cover-sub-heading {
+    font-size: 24px;
+}
+
+.header-cover-app-style .details-txt{
+    font-size: 18px;
+}
+
+
+.header-cover-app-style #singleScreenCarousel{
+    width: calc(100% - 31px);
+    margin: 17px auto 0 auto;
+    border-radius: 25px;
+}
+
+.header-cover-app-style .singleScreenCarousel-wrapper{
+    position: relative;
+    width: 370px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: 70px;
+}
+
+.header-cover-app-style .singleScreenCarousel-wrapper
+.mobile-device{
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+
+.header-cover.header-cover-app-style{
+    position: relative;
+    /*display: flex;
+    align-items: center;*/
+    min-height: 800px;
+    max-height: 900px;
+}
+
+.header-cover-app-style #singleScreenCarousel .item{
+	/*border-radius: 25px;*/
+}
+
+.header-cover-app-style #singleScreenCarousel .item img{
+    /*border-radius: 50px;*/
+    max-width: 100%;
+}
+
+.header-cover.header-cover-app-style:before{
+    content: '';
+    background: #fff;
+    transform: rotate(-5deg);
+    height: 180px;
+    width: 115%;
+    z-index: 0;
+    bottom: -75px;
+    position: absolute;
+}
+
+
+@media (max-width: 991px) and (min-width: 767px){
+    .header-cover.header-cover-app-style{
+        height: 700px !important;
+    }
+
+    .header-cover.header-cover-app-style:before{
+        content: none;
+    }
+}
+
+@media (max-width: 991px){
+    .header-cover.header-cover-app-style:before{
+        content: none;
+    }
+}
+
+@media (max-width: 767px){
+
+    .header-cover.header-cover-app-style{
+        height: 550px;
+        min-height: 550px;
+    }
+}
+
+@media (min-width: 1600px){
+    .header-cover-app-style .singleScreenCarousel-wrapper{
+        margin-top: 130px;
+    }
+}
+/*End Header Cover Style*/
+
+/*Feature section*/
+
+.app-feature-section .text-box-style1 .grid_icon{
+    color: #FF6600;
+}
+
+.app-feature-section .text-box-style1 .grid_icon_wrapper{
+    border-color: #FF6600;   
+}
+
+.app-feature-section .text-box-style1:hover .grid_icon{
+    color: #fff;
+}
+
+.app-feature-section .text-box-style1 .grid_icon_wrapper::before{
+    background-color: #FF6600;
+}
+
+/*End Feature section*/
+
+/*App Screen Carousel*/
+
+.app-screen-section{
+    position: relative;
+}
+
+.app-screen-section:before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+}
+
+.app-screen-section .mobile-device{
+    position: absolute;
+    top: -5px;
+    z-index: 999;
+    left: 50%;
+    width: 385px;
+    transform: translateX(-50%);
+}
+
+.app-screen-owlcarousel .item .img_area{
+    transition: all .5s;
+    transform: scale(.85);
+}
+
+.app-screen-owlcarousel .active.center{
+    z-index: 1;
+}
+
+.app-screen-owlcarousel .active.center .img_area{
+    overflow: hidden;
+    border-radius: 50px;
+    transform: scale(1);  
+}
+
+
+
+.app-screen-owlcarousel .active.firstActiveItem .img_area,
+.app-screen-owlcarousel .active.lastActiveItem .img_area{
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.04), 0 0px 10px 5px rgba(0, 0, 0, .04), 0 8px 10px -5px rgba(0, 0, 0, .02);
+}
+
+.app-screen-owlcarousel.owl-theme .owl-nav [class*=owl-]{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #ddd;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.04), 0 0px 10px 5px rgba(0, 0, 0, .04), 0 8px 10px -5px rgba(0, 0, 0, .02);
+}
+
+.app-screen-owlcarousel.owl-theme .owl-nav .owl-prev{
+    left: -50px;
+}
+.app-screen-owlcarousel.owl-theme .owl-nav .owl-next{
+    right: -50px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .app-screen-owlcarousel.owl-theme .owl-nav .owl-prev{
+        left: 0;
+    }
+    .app-screen-owlcarousel.owl-theme .owl-nav .owl-next{
+        right: 0;
+    }
+}
+
+
+@media (min-width: 600px){
+    .app-screen-owlcarousel .active.firstActiveItem .img_area{
+        transform: scale(.85) translateX(55px);
+    }
+
+
+    .app-screen-owlcarousel .active.lastActiveItem .img_area{
+        transform: scale(.85) translateX(-55px);
+    }
+}
+
+
+@media (max-width: 500px){
+    .carousel-wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .app-screen-owlcarousel.owl-theme .owl-nav .owl-prev,
+    .app-screen-owlcarousel.owl-theme .owl-nav .owl-next{
+        width: 50px;
+        height: 50px;
+    }
+
+    .app-screen-owlcarousel.owl-theme .owl-nav .owl-prev{
+        left: -75px;
+    }
+
+    .app-screen-owlcarousel.owl-theme .owl-nav .owl-next{
+        right: -75px;
+    }
+}
+
+/*Testimonials section*/
+.testimonial-style.testimonial-style2 .testimonial-item{
+    box-shadow: 4px 4px 20px #ededed;
+    margin: 10px;
+}
+/*End Testimonials section*/
+
+/*App Video-section*/
+
+.app-video-section.video-section-full-width:before{
+    background-color: rgba(235, 236, 237, 0.7);
+}
+
+.app-video-section.video-section-full-width .video-play-button:before,
+.app-video-section.video-section-full-width .video-play-button:after{
+    background: #FF6600;
+}
+
+/*End app video seciton*/
+
+/*Pricing Seciton*/
+
+.app-pricing-section .plan.plan_style3 .important .plan_header{
+    background-color: #761E9D;
+}
+
+/*End Pricing Seciton*/
+
+/*Download Section*/
+
+.download-box{
+    display: inline-block;
+    margin: 30px 10px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 25px 45px;
+    width: 400px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.04), 0 0px 10px 5px rgba(0, 0, 0, .04), 0 8px 10px -5px rgba(0, 0, 0, .02);
+}
+
+.download-box .icon_area{
+    width: 125px;
+    float: left;
+    font-size: 125px;
+    line-height: 1;
+}
+
+.download-box .download-info{
+    float: left;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.download-box .download-info p{
+    font-size: 15px;
+}
+
+.download-box .download-info .heading{
+    font-size: 21px;
+}
+
+@media (max-width: 500px){
+    .download-box{
+        width: 100%;
+        margin: 15px 0;
+        padding: 20px;
+    }
+}
+
+/*End Download Section*/
+
+/*Footer*/
+footer{
+    background-color: #250333;
+}
+
+footer .link-list a:hover{
+    color: #fff !important;
+}
+
+

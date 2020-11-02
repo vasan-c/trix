@@ -1,0 +1,212 @@
+/*EXCLUSIVE ON themeforest.net*/
+
+/*-----------------------------------------------------------------------------------
+    Theme Name: IMPLO
+    Description: The Multi-Purpose Template
+    Author: Theme Friend
+    Author URI: https://themeforest.net/user/theme_friend
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/*Basic*/
+
+.bg-color-medical{
+	background-color: #42548E;
+}
+
+h3.heading{
+    font-size: 44px;
+}
+
+.heading-sm{
+    font-size: 22px;
+}
+
+a:hover, a:active {
+    color: #42548E;
+}
+
+.text-color-medicalPrimary{
+	color: #42548E !important;
+}
+
+.list-style li:before{
+    color: #42548E;
+}
+
+.btn.btn-line.line-medicalPrimary {
+    border-color: #42548E;
+    color: #42548E;
+}
+
+.btn.btn-line.line-medicalPrimary:hover {
+    border-color: #42548E;
+    color: #fff;
+    background-color: #42548E;
+}
+
+.btn.btn-fill.fill-medical {
+    border-color: #42548E;
+    background-color: #42548E;
+    color: #fff;
+    border-width: 2px;
+}
+
+.btn.btn-fill.fill-medical:hover {
+    border-color: #42548E;
+    background-color: transparent;
+    color: #42548E;
+}
+
+.social-btn.social-btn-medicalPrimary{
+    background-color: #42548E;
+    color: #fff;
+}
+
+.social-btn.social-btn-medicalPrimary:hover{
+    color: #42548E;
+    background-color: #fff;
+}
+
+/*header*/
+.navik-header.header-dark{
+    background-color: #42548E;
+}
+
+@media only screen and (min-width: 1024px){
+    .attr-nav.search a{
+        background-color: #42548E;
+    }
+}
+/*End header*/
+
+/*Start Special Treatment*/
+
+
+.special_treatment_section 
+.text-box-style4 .grid_icon{
+    width: 60%;
+}
+
+.special_treatment_section .text-box-style4{
+    margin-top: 52px;
+}
+
+.special_treatment_section .text-box-style4 .grid_icon_wrapper{
+    width: 100px;
+    height: 100px;
+    top: -52px;
+    background-color: #42548E;
+    border: 2px solid #42548E;
+}
+
+.special_treatment_section .owl-carousel.owl-theme .owl-prev, 
+.special_treatment_section .owl-carousel.owl-theme .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #D2D2D2;
+    border-radius: 50%;
+    color: #888888 !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.special_treatment_section .owl-carousel.owl-theme .owl-prev:hover, 
+.special_treatment_section .owl-carousel.owl-theme .owl-next:hover{
+    background: transparent;
+}
+
+.special_treatment_section .owl-carousel.owl-theme .owl-prev{
+    left: -100px;
+}
+
+.special_treatment_section .owl-carousel.owl-theme .owl-next {
+    right: -100px;
+}
+
+@media only screen and (max-width: 800px){
+    .special_treatment_section .owl-carousel.owl-theme .owl-nav{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .special_treatment_section .owl-carousel.owl-theme .owl-prev,
+    .special_treatment_section .owl-carousel.owl-theme .owl-next{
+        display: flex !important;
+        position: static;
+        transform: none;
+        justify-content: center;
+    }
+}
+
+
+/*End Special Treatment*/
+
+.lightbox-gallery a .icon_area{
+    background-color: rgba(66, 84, 142, 0.7);
+}
+
+/*Doctors Timetable*/
+
+.tableTableBox{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 100px;
+}
+
+.tableTableBox .heading{
+    font-size: 44px;
+}
+
+.tableTableBox img{
+    width: 80px;
+}
+
+/*End Doctors Timetable*/
+
+/*Time Table*/
+.openingHour ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 15px 0;
+}
+
+.openingHour ul li:first-child{
+    padding-top: 0;
+}
+
+.openingHour ul li:last-child{
+    border-bottom: none;
+}
+
+.emergency .phn{
+    font-size: 30px;
+}
+
+.emergency .phn img{
+    width: 50px;
+    margin-right: 10px;
+}
+/*End Time Table
+
+
+/*Latest News*/
+
+.blog-post-style2 .img_area .hover-box{
+    background-color: rgba(66, 84, 142, 0.7);
+}
+
+/*End Latest News*/
+
+/*Footer*/
+
+footer .link-list a:hover{
+    color: #42548E !important;
+}
+
+
+/*End Footer*/
